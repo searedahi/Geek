@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-GeekyInc.Web-f6b76423-b29d-49a1-b5d5-89bc1373cf60",
 
   "dependencies": {
@@ -44,7 +44,10 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.AspNetCore.Authentication.Facebook": "1.1.0"
+    "Microsoft.AspNetCore.Authentication.Facebook": "1.1.0",
+    "Microsoft.AspNetCore.Authentication.Google": "1.1.0",
+    "Microsoft.AspNetCore.Authentication.Twitter": "1.1.0",
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.1.0"
   },
 
   "tools": {

@@ -87,6 +87,23 @@ namespace GeekyInc.Web
                 AppSecret = Configuration["Authentication:Facebook:AppSecret"]
             });
 
+            app.UseGoogleAuthentication(new GoogleOptions()
+            {
+                ClientId = Configuration["Authentication:Google:ClientId"],
+                ClientSecret = Configuration["Authentication:Google:ClientSecret"]
+            });
+
+            app.UseTwitterAuthentication(new TwitterOptions()
+            {
+                ConsumerKey = Configuration["Authentication:Twitter:ConsumerKey"],
+                ConsumerSecret = Configuration["Authentication:Twitter:ConsumerSecret"]
+            });
+
+            app.UseMicrosoftAccountAuthentication(new MicrosoftAccountOptions()
+            {
+                ClientId = Configuration["Authentication:Microsoft:ClientId"],
+                ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"]
+            });
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
